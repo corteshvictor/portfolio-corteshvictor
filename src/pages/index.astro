@@ -1,0 +1,38 @@
+---
+import Layout from "layouts/Layout.astro";
+import SectionContainer from "components/SectionContainer.astro";
+import Hero from "components/Hero.astro";
+import Experience from "components/Experience.astro";
+import About from "components/About.astro";
+import BriefcaseIcon from "icons/Briefcase.astro";
+import UserIcon from "icons/User.astro";
+---
+
+<Layout
+  title="Portafolio de Victor Cortés - Desarrollador de aplicaciones Web con más de 15 años de experiencia"
+  description="Busca los servicios de Victor Cortés para desarrollar tu aplicación web multiplataforma."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero />
+    </SectionContainer>
+
+    <div class="space-y-24">
+      <SectionContainer id="experience">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+          <BriefcaseIcon class="size-6" />
+          Experiencia laboral
+        </h2>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="about">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+          <UserIcon class="size-7" />
+          Sobre mí
+        </h2>
+        <About />
+      </SectionContainer>
+    </div>
+  </main></Layout
+>

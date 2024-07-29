@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCIE = [
+  {
+    date: "Mayo 2018 - Junio 2024",
+    title: "STAFF DEVELOPER - Condor Labs",
+    description:
+      "Lideré y participé eficientemente en proyectos de desarrollo de software, diseñé, escribí y depuré código avanzado, resolviendo problemas complejos. Fui reconocido como mentor por varios desarrolladores de la compañía.",
+  },
+  {
+    date: "Abril 2017 - Abril 2018",
+    title: "CONSULTOR DE SOPORTE TÉCNICO - BIT Consulting",
+    description:
+      "Desarrollé aplicaciones web e hice soporte en la implementación de soluciones de negocio basadas en Microsoft Dynamics GP, BI y Azure, logrando plena satisfacción de los clientes.",
+  },
+  {
+    date: "Julio 2008 - Marzo 2017",
+    title: "CONSULTOR DE SOPORTE TÉCNICO - BIT Consulting",
+    description:
+      "Desarrollé aplicaciones, serví como analista de aplicaciones ERP haciendo business intelligence, brindé soporte de IT, y participé como auditor interno de ISO 14001 y 9001",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mt-12 ml-3">
+  {EXPERIENCIE.map((experience) => <ExperienceItem {...experience} />)}
+</ol>
